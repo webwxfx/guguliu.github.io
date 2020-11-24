@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Github Pages 绑定自定义域名</title>
+      <link href="blog/domain/"/>
+      <url>blog/domain/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Github-Pages-绑定自定义域名"><a href="#Github-Pages-绑定自定义域名" class="headerlink" title="Github Pages 绑定自定义域名"></a>Github Pages 绑定自定义域名</h1><p>如果觉得 GitHub 自动分配的二级域名可能有点长，还不太好记忆。可以绑定一下自定义域名。</p><h2 id="域名购买"><a href="#域名购买" class="headerlink" title="域名购买"></a>域名购买</h2><p>首先，你得先注册一个域名。</p><p>我这用的是阿里云，也可以去腾讯云、GoDaddy等注册也行！！</p><p>阿里云新用户活动界面：<a href="https://promotion.aliyun.com/ntms/act/domainbrand.html">https://promotion.aliyun.com/ntms/act/domainbrand.html</a></p><p>阿里云域名1元首年：<a href="https://wanwang.aliyun.com/domain/1yuan">https://wanwang.aliyun.com/domain/1yuan</a></p><p><span style="color:#ff0000">注意：.cn 后缀的好像必须要备案才能正常使用！其它后缀是国内服务器要备案。</span></p><hr><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><blockquote><p> 购买好域名后打开<code>控制台</code>：</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="1.jpg" alt="控制台"></p><blockquote><p> 打开：<code>产品与服务</code> —》 <code>域名</code>：</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="2.jpg" alt="域名管理"></p><p><span style="color:#ff0000">注意：新购买可能需要实名认证,到实名认证页面上传身份证照片和输入身份证号码就等他认证成功就行了</span></p><p>实名认证完继续如下步骤：</p><blockquote><p>找到你的域名，点击解析：</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="3.jpg" alt="解析域名"></p><blockquote><p>点击添加记录:</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="4.jpg" alt="添加记录"></p><p><img src= "/img/loading.gif" data-lazy-src="5.jpg" alt="A记录"></p><p><img src= "/img/loading.gif" data-lazy-src="6.jpg" alt="CNAME记录"></p><p>填好直接保存就行了。</p><p>分别添加 四个<code>A 记录</code> 和 一个 <code>CNAME 记录</code></p><p>A 记录需要添加的 ip 如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure><blockquote><p>添加完成后如图：</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="7.jpg" alt="添加完成解析地址"></p><hr><h3 id="手机客户端"><a href="#手机客户端" class="headerlink" title="手机客户端"></a>手机客户端</h3><p>手机客户端也可以进行域名解析，首先下载阿里云的手机客户端。</p><blockquote><p>打开登陆后在主页找到<code>域名管理</code>:</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="8.jpg" alt="域名管理"></p><blockquote><p>找到你的域名，点击旁边的 <code>三点</code>图标，再选择<code>解析</code>:</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="9.jpg" alt="解析域名"></p><blockquote><p>点击右上角的<code>+加号</code>添加一条解析记录：</p></blockquote><p>解析内容和上面网页端一样,分别添加 四个<code>A 记录</code> 和 一个 <code>CNAME 记录</code>：</p><p><img src= "/img/loading.gif" data-lazy-src="10.jpg" alt="添加记录完成"></p><hr><h2 id="修改GitHub-Pages-设置"><a href="#修改GitHub-Pages-设置" class="headerlink" title="修改GitHub Pages 设置"></a>修改GitHub Pages 设置</h2><p>域名解析好就可以到GitHub Pages 设置添加自定义域名了</p><blockquote><p>打开你的仓库地址，选择 <code>setting</code></p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="11.jpg" alt="打开设置"></p><blockquote><p>往下拉，找到 <code>GitHub Pages</code>，在Custom domain 处输入你的域名，实际内容根据域名A记录解析来定。</p></blockquote><p>填好域名点击 <code>save</code>  保存就好了！</p><p><img src= "/img/loading.gif" data-lazy-src="12.jpg" alt="输入自定义域名"></p><p>再刚填好自定义域名后，下方的<code>强制https(Enforce HTTPS)</code>可能无法勾选，如图</p><p><img src= "/img/loading.gif" data-lazy-src="13.jpg" alt="开启HTTPS访问"></p><p>可以稍等一段时间等证书签发，就能勾选了,（我好像等了不到一个小时就能勾选了）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用 GitHub/gitee 托管搭建 Hexo 个人博客网站</title>
       <link href="blog/hexoblogsetup/"/>
       <url>blog/hexoblogsetup/</url>
